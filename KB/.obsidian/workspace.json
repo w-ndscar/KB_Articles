@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c0ee0c3659992ea2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Custom Windows 10 Pro Image.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WDS Setup.md",
+                "file": "Custom Windows 10 Pro Image.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WDS Setup.md",
+                "file": "Custom Windows 10 Pro Image.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WDS Setup.md"
+                "file": "Custom Windows 10 Pro Image.md"
               }
             }
           }
@@ -171,10 +183,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2b2c75e1ed51a127",
+  "active": "c0ee0c3659992ea2",
   "lastOpenFiles": [
-    "IT Setup.md",
     "WDS Setup.md",
+    "IT Setup.md",
+    "Custom Windows 10 Pro Image.md",
     "Group Policies.md"
   ]
 }

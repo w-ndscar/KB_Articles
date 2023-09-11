@@ -22,4 +22,4 @@
 
 * **Windows System Image Manager** is used to create a config file (XML) where the post-deployment properties are specified such as **Skip EULA page, Setup Admin password** and so on
 * Custom Windows 10 Pro image is created using **DISM** tool after installing the necessary software and removing bloat and telemetry
-* Then the image is fetched via PXE (Network boot) 
+* Then the image is fetched via PXE (Network boot) and installed on the client machine
