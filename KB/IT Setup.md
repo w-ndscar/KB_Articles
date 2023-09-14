@@ -8,6 +8,12 @@
 * Not in domain
 
 
+## Backup Machines
+
+### 192.168.6.175
+### 192.168.24.200
+
+
 ## WSUS and WDS Setup
 
 ### 192.168.56.26 - WSUS and WDS Server

@@ -1,4 +1,4 @@
-****
+***
 ##### Table of Contents:
 - [[#RDP Idle Timeout Logoff|RDP Idle Timeout Logoff]]
 - [[#Hide Shutdown and Sleep|Hide Shutdown and Sleep]]
@@ -51,10 +51,12 @@
 - Set “Interactive logon: Message title for users attempting to log on” to “Enabled” and configure the title to “Important Computer Maintenance Reminders”.
 - Set “Interactive logon: Message text for users attempting to log on” to “Enabled” and configure the text to:
 ****
+```
 - Always close all applications and log off your office remote computer at the end of every day to ensure the security of your data.
 - Don’t forget to restart your Office remote computer every Friday to keep it running smoothly. If your system prompts for a restart due to recent Windows updates, please do so to keep your computer up-to-date and secure
 - Save your working files frequently, at least once every 30 minutes, to prevent losing any unsaved work
-Thank you for helping to keep our systems secure and running smoothly.
+	Thank you for helping to keep our systems secure and running smoothly.
+```
 ****
 
 
@@ -77,6 +79,7 @@ Thank you for helping to keep our systems secure and running smoothly.
 ##### **OU: Domain Computers, Backup PC**  
 
 `Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Windows Firewall with Advanced Security -> Windows Firewall with Advanced Security -> Inbound Rules`
+
 - **RPC:** New Rule -> Predefined -> **Remote Scheduled Task Management**
 - **WMI:** New Rule -> Predefined -> **Windows Management Instrumentation** 
 - **WinRM:** New Rule -> Predefined -> **Windows Remote Management**
@@ -119,5 +122,18 @@ Enable “Select an active power plan” and select **High Performance**
 - Select **Local**. Navigate to `HKLM\System\CurrentControlSet\Control\TimeZoneInformation`
 - Select all the registry item of **TimeZoneInformation** key.
 - Select **TimeZoneKeyName**. Value type: **REG_SZ**. Value data: **India Standard Time**  
+
+
+## WSUS Domain Policy
+##### **OU: Domain Computers, Backup PC** 
+
+`Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Windows Update`
+
+- Set **Configure Automatic Updates** to **Enabled**. Under **Configure automatic updating**, select '3. Auto download and notify for install'. Configure the schedule options accordingly.
+- Set **Specify intranet Microsoft update service location** to **Enabled**. Set the URL/FQDN of the WSUS Server along the with the port number. 8530 for http and 8531 for https.
+- Enable Automatic update detection frequency and set it to 1 hour(s).
+- Set **Enable client side targeting** to **Enabled** and specify the group name on the WSUS Server.
+- Set **Allow Automatic updates immediate installation** to **Enabled**.
+
 
 ***
