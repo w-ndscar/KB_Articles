@@ -5,7 +5,10 @@
 
 WDS Role can be added in the server. Then specify a folder where the boot, image and other files will reside.
 
+Refer to the [Windows Deployment Services](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj648426(v=ws.11)) article from Microsoft for more info.
+
 #### Extracting the wim file from the ISO
+***
 
 * For **Windows Server** the boot.wim and install.wim files can easily be copied
 * **Windows 10** contains multiple versions (Home, Pro, Pro N and so on) as a package together in an ESD format
@@ -13,11 +16,11 @@ WDS Role can be added in the server. Then specify a folder where the boot, image
 
 	`dism /Get-WimInfo /wimfile:filename.esd` 
 
-* Then use the command to get the Windows 10 Pro image.
+* Then use the command to get the Windows 10 Pro image (wim).
 
 	`dism /export-image /SourceImageFile:filename.esd /SourceIndex:6 /DestinationImageFile:destinationfolder/filename.wim /Compress:max /CheckIntegrity` 
 	
-	Note: `/SourceIndex:6` Specify the correct index number for the specific version
+	**Note**: `/SourceIndex:6` Specify the correct index number for the specific version
 
 * Copy the exported wim image to the WDS Location (Default Location: `C:\Remoteinstall`) 
 
@@ -31,6 +34,7 @@ WDS Role can be added in the server. Then specify a folder where the boot, image
 
 
 ## Installing the custom image
+***
 
 * On the client machine side, select Network boot on the first priority and boot into it.
 * Then click Next on the setup screen and it'll prompt for Username/Password | Note: Username: `FQDN\Username`
