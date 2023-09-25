@@ -25,6 +25,7 @@ Refer to the [Windows Deployment Services](https://learn.microsoft.com/en-us/pre
 * Copy the exported wim image to the WDS Location (Default Location: `C:\Remoteinstall`) 
 
 #### Adding the image files in Windows Deployment Services
+***
 
 * Open WDS. Right click on the **Boot Images**, click **Add Install Image** and browse for the *boot.wim*. Give it a name and click Finish
 * Then Right click on the **Install Images**, click **Add Install Image**. Select an Existing Group or Create an image group and give it a name. Click Next and browser for the *install.wim*.

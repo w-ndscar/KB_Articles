@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Custom Windows 10 Pro Image.md",
+                "file": "WDS Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Custom Windows 10 Pro Image.md",
+                "file": "WDS Setup.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Custom Windows 10 Pro Image.md"
+                "file": "WDS Setup.md"
               }
             }
           },
@@ -181,10 +181,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6fcd59b13f64892a",
+  "active": "917da50c65b86be4",
   "lastOpenFiles": [
-    "WDS Setup.md",
     "Custom Windows 10 Pro Image.md",
+    "WDS Setup.md",
     "Group Policies.md",
     "IT Setup.md",
     "Windows ISO to WIM.md"
