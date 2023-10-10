@@ -89,7 +89,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -109,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Custom Windows and WDS Deployment/Windows ISO to WIM.md",
+                "file": "Group Policies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Custom Windows and WDS Deployment/Windows ISO to WIM.md",
+                "file": "Group Policies.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Custom Windows and WDS Deployment/Windows ISO to WIM.md"
+                "file": "Group Policies.md"
               }
             }
           },
@@ -180,7 +181,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "960e87ee9e1edee4",
+  "active": "c0ee0c3659992ea2",
   "lastOpenFiles": [
     "Custom Windows and WDS Deployment/WDS Setup.md",
     "Custom Windows and WDS Deployment/Custom Windows 10 Pro Image.md",

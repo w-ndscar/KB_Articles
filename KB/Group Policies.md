@@ -1,14 +1,14 @@
 ***
 ##### Table of Contents:
-- [[#RDP Idle Timeout Logoff|RDP Idle Timeout Logoff]]
-- [[#Hide Shutdown and Sleep|Hide Shutdown and Sleep]]
-- [[#Login Banner|Login Banner]]
-- [[#Enable WinRM|Enable WinRM]]
-- [[#RPC WMI WinRM Firewall|RPC WMI WinRM Firewall]]
-- [[#Disable Admin Share|Disable Admin Share]]
-- [[#Enable Admin Share|Enable Admin Share]]
-- [[#High Performance Power Plan|High Performance Power Plan]]
-- [[#Set Time Zone|Set Time Zone]]
+- [[#RDP Idle Timeout Logoff]]
+- [[#Hide Shutdown and Sleep]]
+- [[#Login Banner]]
+- [[#Enable WinRM]]
+- [[#RPC WMI WinRM Firewall]]
+- [[#Disable Admin Share]]
+- [[#Enable Admin Share]]
+- [[#High Performance Power Plan]]
+- [[#Set Time Zone]]
 
 ***
 
