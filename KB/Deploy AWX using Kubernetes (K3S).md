@@ -1,4 +1,5 @@
 ***
+*Shoutout to [Calvin Remsburg](https://www.youtube.com/@CalvinRemsburg0) for a detailed explanation on this topic. This document is inspired from his video: [Installing Ansible AWX](https://www.youtube.com/watch?v=Nvjo2A2cBxI)*
 #### Objective: Deploy AWX using Kubernetes (K3S) in a Linux environment
 
 #### Things to do: 

@@ -1,6 +1,6 @@
 # SSL/TLS Certificates
 
-This is a documentation from [ChristianLempa](https://github.com/ChristianLempa/cheat-sheets/commits?author=ChristianLempa) on Github.
+*This is a documentation from [ChristianLempa](https://github.com/ChristianLempa/cheat-sheets/commits?author=ChristianLempa) on Github.*
 
 X.509 is an ITU standard defining the format of public key certificates. X.509 are used in TLS/SSL, which is the basis for HTTPS. An X.509 certificate binds an identity to a public key using a digital signature. A certificate contains an identity (hostname, organization, etc.) and a public key (RSA, DSA, ECDSA, ed25519, etc.), and is either signed by a Certificate Authority or is Self-Signed.
 

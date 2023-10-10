@@ -10,7 +10,6 @@
 * Mount the ISO and head to the **sources folder**
 * Under the **sources** folder, **boot.wim** and **install.wim** can be found
 
-
 #### Windows 10 & 11
 
 * **Windows 10** and **Windows 11** contains multiple versions (Home, Pro, Pro N and so on) as a package together in an ESD format
@@ -23,3 +22,4 @@
 	`dism /export-image /SourceImageFile:filename.esd /SourceIndex:6 /DestinationImageFile:destinationfolder/filename.wim /Compress:max /CheckIntegrity` 
 	
 	Note: `/SourceIndex:6` The index number for Windows 10 Pro was 6 which can be obtained by running the previous `/Get-WimInfo` command
+***

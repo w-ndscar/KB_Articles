@@ -9,12 +9,16 @@
 
 ## Create a config/catalog XML file
 ***
+#### Selecting an Image File - Windows System Image Manager
 
 - To create a config (XML) file, we need **Windows System Image Manager**. **Windows System Image Manager** is a part of [Windows ADK](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install).  Make sure to choose and install the right version of ADK.
 - The config file can be created without the Windows OS image. However, the things that we can customize will be limited. It is recommended to use a Windows OS image (wim file format) while creating the config.
 - Open **Windows System Image Manager**. Click **File -> New Answer File**.
 - Browse for the Windows OS image (wim format), and click **Ok**.
 - Then it'll prompt to create a catalog for that image. Click on **Yes**.
+
+#### Customizations
+
 - Now there are a wide varieties of customizations that we can do here. Please refer to these links for the documentations. [Windows System Image Manager Technical Reference](https://learn.microsoft.com/en-us/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference) and [Answer files](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs?view=windows-11)
 - For an instance, we'll do the following customizations: AcceptEula, Skipping EULA and account setup on OOBE (Out-of-the-Box-Experience) and enable Built-in Administrator and set a password.
 - At the left bottom section, you'll see your Windows image name and under that two directories: Components and Packages.
@@ -32,8 +36,9 @@
 
 - Provide a description and then set the value Order to 1 and RequireUserInput value to false.
 - The answer file is now ready. Click **File -> Save Answer File As** and rename it **unattend.xml**.
+***
 
-### Creating a custom image
+## Creating a custom image
 ***
 
 - Just do a normal install of Windows OS in a bare metal or a virtual machine.
@@ -55,3 +60,4 @@
 - The custom wim image is now ready for the installation.
 
 **Note**: Refer [[WDS Setup]] if you want to deploy the image using Windows Deployment Services
+***
