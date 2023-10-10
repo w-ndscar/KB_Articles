@@ -42,9 +42,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e4e8d21d0b676e3a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SSL Certs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "219f7dd21571f0ef",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Deploy AWX using Kubernetes (K3S).md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -110,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WDS Setup.md",
+                "file": "Deploy AWX using Kubernetes (K3S).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WDS Setup.md",
+                "file": "Deploy AWX using Kubernetes (K3S).md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WDS Setup.md"
+                "file": "Deploy AWX using Kubernetes (K3S).md"
               }
             }
           },
@@ -181,8 +205,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "917da50c65b86be4",
+  "active": "219f7dd21571f0ef",
   "lastOpenFiles": [
+    "SSL Certs.md",
+    "Deploy AWX using Kubernetes (K3S).md",
     "Custom Windows 10 Pro Image.md",
     "WDS Setup.md",
     "Group Policies.md",
