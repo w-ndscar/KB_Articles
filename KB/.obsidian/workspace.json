@@ -38,6 +38,18 @@
               "type": "markdown",
               "state": {
                 "file": "Deploy AWX using Kubernetes (K3S).md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1330f49e7c220ba2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cert Manager on Kubernetes.md",
                 "mode": "source",
                 "source": false
               }
@@ -89,8 +101,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -183,13 +194,14 @@
   },
   "active": "c0ee0c3659992ea2",
   "lastOpenFiles": [
+    "Cert Manager on Kubernetes.md",
+    "Deploy AWX using Kubernetes (K3S).md",
+    "SSL Certs.md",
+    "Group Policies.md",
     "Custom Windows and WDS Deployment/WDS Setup.md",
     "Custom Windows and WDS Deployment/Custom Windows 10 Pro Image.md",
     "Custom Windows and WDS Deployment",
     "Custom Windows and WDS Deployment/Windows ISO to WIM.md",
-    "Group Policies.md",
-    "Deploy AWX using Kubernetes (K3S).md",
-    "SSL Certs.md",
     "IT Setup.md"
   ]
 }

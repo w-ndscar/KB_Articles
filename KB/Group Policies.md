@@ -9,6 +9,7 @@
 - [[#Enable Admin Share]]
 - [[#High Performance Power Plan]]
 - [[#Set Time Zone]]
+- [[#WSUS Domain Policy]]
 
 ***
 
@@ -129,7 +130,7 @@ Enable “Select an active power plan” and select **High Performance**
 
 `Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Windows Update`
 
-- Set **Configure Automatic Updates** to **Enabled**. Under **Configure automatic updating**, select '3. Auto download and notify for install'. Configure the schedule options accordingly.
+- Set **Configure Automatic Updates** to **Enabled**. Under **Configure automatic updating**, select '3. Auto download and schedule the install'. Configure the schedule options accordingly.
 - Set **Specify intranet Microsoft update service location** to **Enabled**. Set the URL/FQDN of the WSUS Server along the with the port number. 8530 for http and 8531 for https.
 - Enable Automatic update detection frequency and set it to 1 hour(s).
 - Set **Enable client side targeting** to **Enabled** and specify the group name on the WSUS Server.
