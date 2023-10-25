@@ -10,6 +10,7 @@
 - [[#High Performance Power Plan]]
 - [[#Set Time Zone]]
 - [[#WSUS Domain Policy]]
+- [[#Block IP Addr Outbound Firewall]]
 
 ***
 
@@ -136,5 +137,15 @@ Enable “Select an active power plan” and select **High Performance**
 - Set **Enable client side targeting** to **Enabled** and specify the group name on the WSUS Server.
 - Set **Allow Automatic updates immediate installation** to **Enabled**.
 
+
+## Block IP Addr Outbound Firewall
+##### OU: Domain Computers
+
+`Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Windows Defender Firewall with Advanced Security -> Windows Defender Firewall with Advanced Security -> Outbound Rules`
+
+- Right click and click **New Rule** and give it a name
+- Click on **Scope** Tab and under **Remote IP address**, select **These IP addresses** and add the desired IP addresses to the block the RDP access
+- Certain ports can also be blocked by selecting the **Protocols and Ports** tab and select the appropriate protocol (say TCP), and select Specific Ports from the dropdown and enter the ports to block
+- These are the blacklisted IPs and ports. If this policy is applied to an OU, then the computers in that OU will not be able to remote into or access the specified IPs and ports.  
 
 ***
