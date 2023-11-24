@@ -148,4 +148,13 @@ Enable “Select an active power plan” and select **High Performance**
 - Certain ports can also be blocked by selecting the **Protocols and Ports** tab and select the appropriate protocol (say TCP), and select Specific Ports from the dropdown and enter the ports to block
 - These are the blacklisted IPs and ports. If this policy is applied to an OU, then the computers in that OU will not be able to remote into or access the specified IPs and ports.  
 
+
+## RDP_Policy
+##### OU: Domain Computers
+
+`Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Local Policies -> User Rights Assignment`
+
+- Right click on **Allow log on through Remote Desktop Services** and click **Properties**
+- Check the box **Define these policy settings** and select **Add User or Group** and select the desired users and groups
+
 ***
