@@ -9,6 +9,7 @@ Refer to the [Windows Deployment Services](https://learn.microsoft.com/en-us/pre
 
 #### Extracting the wim file from the ISO
 ***
+Refer to [[Windows ISO to WIM]] for more info
 
 * For **Windows Server** the boot.wim and install.wim files can easily be copied
 * **Windows 10** contains multiple versions (Home, Pro, Pro N and so on) as a package together in an ESD format

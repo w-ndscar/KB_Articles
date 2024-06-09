@@ -11,6 +11,9 @@
 - [[#Set Time Zone]]
 - [[#WSUS Domain Policy]]
 - [[#Block IP Addr Outbound Firewall]]
+- [[#Set Local Administrators]]
+- [[#Remote Desktop Shadow WP (with User's Permission)]]
+- [[#Remote Desktop Shadow WOP (without User's Permission)]]
 
 ***
 
@@ -66,15 +69,16 @@
 ##### **OU: Domain Computers, Backup PC**  
 
 - `Computer Configuration -> Policies -> Windows Settings -> Security Settings -> System Services`
-- ***Windows Remote Service (WS-Management)*** -> Check “Define this policy setting” and select Automatic
-- `Computer Policies -> Preferences -> Control Panel Settings -> Services.` Right click and Select New -> Service
-- Service Name: ***WinRM***. Recovery Tab -> First, Second and Subsequent failures -> Select “Restart the service”
+- ***Windows Remote Management (WS-Management)*** -> Check “Define this policy setting” and select Automatic
+- `Computer Configuration -> Preferences -> Control Panel Settings -> Services.` Right click and Select New -> Service
+- Service Name: ***WinRM***. Service Action: ***Start Service***. Recovery Tab -> First, Second and Subsequent failures -> Select “Restart the service”
 - Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Windows Remote Management (WinRM) -> WinRM Service
 - Enable ***Allow remote server management through WinRM***
 - In IPv4/IPv6 boxes, specify IP addresses or enter * for all IP addresses
-- Create Windows Defender Firewall rules allowing WinRM connections on the default ports TCP/5985 and TCP/5986. Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Windows Firewall with Advanced Security -> Windows Firewall with Advanced Security -> Inbound Rules
+- Then, Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Windows Remote Shell -> Enable ***Allow Remote Shell Access***
+- Create Windows Defender Firewall rules allowing WinRM connections on the default ports TCP/5985 and TCP/5986. Note: This policy is already added in **RPC WMI WinRM Firewall**. Leaving the steps below for a reference
+- Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Windows Firewall with Advanced Security -> Windows Firewall with Advanced Security -> Inbound Rules
 - Right Click and select New Rule. Select Predefined -> ***Windows Remote Management***
-- Finally, Computer Configuration -> Policies -> Windows Components -> Windows Remote Shell -> Enable ***Allow Remote Shell Access***  
 
 
 ## RPC WMI WinRM Firewall
@@ -115,7 +119,7 @@ Select All and click **Allow the connection**
 Enable “Select an active power plan” and select **High Performance**  
 
 
-## Set Time Zone
+## IST Time Zone
 ##### **OU: Domain Computers, Backup PC**  
 
 `Computer Configuration -> Preferences -> Windows Settings -> Registry`
@@ -157,4 +161,38 @@ Enable “Select an active power plan” and select **High Performance**
 - Right click on **Allow log on through Remote Desktop Services** and click **Properties**
 - Check the box **Define these policy settings** and select **Add User or Group** and select the desired users and groups
 
+
+## Set Local Administrators
+
+##### OU: Domain Computers
+
+`Computer Configuration -> Policies -> Windows Settings -> Security Settings -> Restricted Groups`
+
+- Right Click and Select "Add Group"
+- Select Browse and add the Administrators Group and click OK
+- Double Click on Administrators and select Add on "Members of the group" section
+- Browse and find your security group that you want to grant the Local Admin privilege
+
+## Remote Desktop Shadow WP (with User's Permission) 
 ***
+
+`Computer Configuration -> Administrative Templates -> Windows Components -> Remote Desktop Services -> Remote Desktop Session Host -> Connections`
+
+- Edit the option "Set rules for remote control of Remote Desktop Services user sessions" and click **Enabled**
+- Under **Options**, select **Full Control with user's permission** and click OK
+
+## Remote Desktop Shadow WOP (without User's Permission) 
+***
+
+`Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Remote Desktop Services -> Remote Desktop Session Host -> Connections`
+
+- Edit the option "Set rules for remote control of Remote Desktop Services user sessions" and click **Enabled**
+- Under **Options**, select **Full Control without user's permission** and click OK
+
+
+## Private DNS Policy
+
+`Computer Configuration -> Policies -> Administrative Templates -> Network -> DNS Client`
+
+- Edit **DNS Servers** and click **Enabled**
+- Specify at least one DNS server address. Note that the DNS address are space delimited.

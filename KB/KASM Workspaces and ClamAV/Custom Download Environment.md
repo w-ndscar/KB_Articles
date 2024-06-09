@@ -124,4 +124,9 @@ sudo smbpasswd -a smbuser
 
 Now the users would be able to download the files on the Chromium Workspace and access them via SMB Share on Windows.
 
+You can check the status of the Samba Daemon by entering the command:
+```shell
+sudo systemctl status smbd
+```
+
 We can further add an Antivirus and scan the SMB shared folder if a file/folder changes occur. Refer to the [[ClamAV with On-Access Scanning on Linux]] doc for more info
