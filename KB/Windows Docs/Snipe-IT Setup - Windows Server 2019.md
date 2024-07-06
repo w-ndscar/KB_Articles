@@ -1,6 +1,7 @@
 
 *This article follows this amazing video: [# SNIPE-IT Installation On Windows Server 2016](https://www.youtube.com/watch?v=kxGGQutvktM&list=PLuB-nSPBO_bM_dly7SMWP7l08iqL3nrml)*
 
+***
 #### Prerequisites:
 
 - IIS Server + CGI
@@ -30,5 +31,4 @@ C:/inetpub/wwwroot/snipe-it
 Right click on storage -> Properties -> Security -> Edit -> Add
 IUSR with Modify
 
-
-
+***

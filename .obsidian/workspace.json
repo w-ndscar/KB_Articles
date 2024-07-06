@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "KB/Windows Docs/Logoff RDP Session.md",
+                "file": "KB/Windows Docs/Snipe-IT Setup - Windows Server 2019.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "KB/Windows Docs/Logoff RDP Session.md",
+                "file": "KB/Windows Docs/Snipe-IT Setup - Windows Server 2019.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "KB/Windows Docs/Logoff RDP Session.md",
+                "file": "KB/Windows Docs/Snipe-IT Setup - Windows Server 2019.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "KB/Windows Docs/Logoff RDP Session.md"
+                "file": "KB/Windows Docs/Snipe-IT Setup - Windows Server 2019.md"
               }
             }
           }
@@ -148,8 +148,12 @@
   },
   "active": "3efc829b6c6da615",
   "lastOpenFiles": [
-    "KB/Windows Docs/Install Windows the Arch way.md",
+    "KB/Windows Docs/Logoff RDP Session.md",
     "KB/Linux Docs/Zabbix Monitoring.md",
+    "KB/Linux Docs/KASM Workspaces and ClamAV/Custom Download Environment.md",
+    "KB/Linux Docs/KASM Workspaces and ClamAV/ClamAV with On-Access Scanning on Linux.md",
+    "KB/Linux Docs/Deploy AWX using Kubernetes (K3S).md",
+    "KB/Windows Docs/Install Windows the Arch way.md",
     "KB/Logoff RDP Session.md",
     "KB/Snipe-IT Setup - Windows Server 2019.md",
     "KB/Group Policies.md",
