@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "05b84332dc103064",
+        "id": "0b40f547512cf69a",
         "type": "tabs",
         "children": [
           {
-            "id": "3efc829b6c6da615",
+            "id": "99d7968c6633ac8f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "KB/Windows Docs/Snipe-IT Setup - Windows Server 2019.md",
+                "file": "KB/Windows Docs/Clone SSD (SATA) to NVMe.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "KB/Windows Docs/Snipe-IT Setup - Windows Server 2019.md",
+                "file": "KB/Windows Docs/Clone SSD (SATA) to NVMe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "KB/Windows Docs/Snipe-IT Setup - Windows Server 2019.md",
+                "file": "KB/Windows Docs/Clone SSD (SATA) to NVMe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "KB/Windows Docs/Snipe-IT Setup - Windows Server 2019.md"
+                "file": "KB/Windows Docs/Clone SSD (SATA) to NVMe.md"
               }
             }
           }
@@ -146,14 +146,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3efc829b6c6da615",
+  "active": "99d7968c6633ac8f",
   "lastOpenFiles": [
-    "KB/Windows Docs/Logoff RDP Session.md",
     "KB/Linux Docs/Zabbix Monitoring.md",
+    "KB/Windows Docs/Clone SSD (SATA) to NVMe.md",
+    "KB/Windows Docs/Logoff RDP Session.md",
+    "KB/Linux Docs/Zabbix - Custom Items, Triggers and Alerts.md",
+    "KB/Windows Docs/Group Policies.md",
+    "KB/Windows Docs/Install Windows the Arch way.md",
+    "KB/Windows Docs/Snipe-IT Setup - Windows Server 2019.md",
     "KB/Linux Docs/KASM Workspaces and ClamAV/Custom Download Environment.md",
     "KB/Linux Docs/KASM Workspaces and ClamAV/ClamAV with On-Access Scanning on Linux.md",
     "KB/Linux Docs/Deploy AWX using Kubernetes (K3S).md",
-    "KB/Windows Docs/Install Windows the Arch way.md",
     "KB/Logoff RDP Session.md",
     "KB/Snipe-IT Setup - Windows Server 2019.md",
     "KB/Group Policies.md",
