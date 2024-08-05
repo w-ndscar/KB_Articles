@@ -73,7 +73,7 @@ Make sure both the SSD and NVMe are connected together on the PC. Then boot into
 
 If the clone fails with the error, "This disk contains mismatched GPT and MBR partition: /dev/sdX", or it is possible that the disk type is MBR and there is a GPT entry present in it. Go to **Step 3**
 
-##### Step 3: Troubleshooting the errors
+##### Step 3: Troubleshooting the Clonezilla errors
 
 **Scenario 1: Clone failed - This disk contains mismatched GPT and MBR partition: /dev/sdX**
 
@@ -127,15 +127,11 @@ The conversion of an existing Windows installation from MBR (Legacy) to GPT (UEF
 
 **By booting into the OS:**
 1. Boot into the cloned OS by selecting the NVMe drive (make sure Legacy boot is enabled)
-2. Open Disk Manager (Run -> diskmgmt.msc)
-3. Right on the OS Partition (mostly C: Drive) and select **Mark Partition as Active**
-4. Open Command Prompt as an administrator and type the following command
-5. `bcdboot C:\Windows /s C:`
-6. Replace the OS drive letter if its different from C:
-7. Then run the command: `mbr2gpt /disk:0 /validate /allowFullOS`
-8. If the validation fails with the error: "Disk layout validation failed", Refer **Step 1.1**
-9. After the validation succeeds, enter the command: `mbr2gpt /disk:0 /convert /allowFullOS`. This will convert the disk to GPT
-10. Then restart the PC, disable Legacy on the boot menu and boot into the PC.
+2. Run the command: `mbr2gpt /disk:0 /validate /allowFullOS`
+3. If the validation fails with the error: "Disk layout validation failed", Refer **Step 1.1**
+4. If the validation fails with the error: "Cannot find OS partition(s) for disk 0", Refer **Step 4.1**
+5. After the validation succeeds, enter the command: `mbr2gpt /disk:0 /convert /allowFullOS`. This will convert the disk to GPT
+6. Then restart the PC, disable Legacy on the boot menu and boot into the PC.
 
 **Without booting into the OS**:
 1. A Windows 10/11 ISO bootable image is needed. A tool like [Rufus](https://rufus.ie/en/)/[Ventoy](https://www.ventoy.net/en/index.html) can be used to copy the ISO to a USB drive and make it bootable.
@@ -143,13 +139,25 @@ The conversion of an existing Windows installation from MBR (Legacy) to GPT (UEF
 3. On the Setup page, Click on **Repair your computer** option
 4. Then select Troubleshoot -> Advanced Options -> **Command Prompt**
 5. Then type the command: `mbr2gpt /disk:0 /validate`
-6. If the validation fails with the error: "Disk layout validation failed", Refer **Step 1.1** 
-7. After the validation succeeds, enter the command: `mbr2gpt /disk:0 /convert`. This will convert the disk to GPT
-8. Then close the command prompt an go to Troubleshoot -> Advanced Options again and select **Startup Repair**. This will clear the errors on EFI, if there are any.
+6. If the validation fails with the error: "Disk layout validation failed", Refer **Step 1.1**
+7. If the validation fails with the error: "Cannot find OS partition(s) for disk 0", Refer **Step 4.1**
+8. After the validation succeeds, enter the command: `mbr2gpt /disk:0 /convert`. This will convert the disk to GPT
+9. Then close the command prompt an go to Troubleshoot -> Advanced Options again and select **Startup Repair**. This will clear the errors on EFI, if there are any.
 
 **For Linux**:
 
 Please refer to the first answer by sancho.s in the following post on Stack Exchange.
 [Convert MBR to GPT](https://askubuntu.com/questions/1314111/convert-mbr-partition-to-gpt-without-data-loss)
+
+###### Step 4.1 Troubleshooting the MBR2GPT error
+
+If the error: "Cannot find OS partition(s) for disk 0", do the following
+1. Boot into the OS
+2. Open Disk Manager (Run -> diskmgmt.msc)
+3. Right on the OS Partition (mostly C: Drive) and select **Mark Partition as Active**
+4. Open Command Prompt as an administrator and type the following command
+5. `bcdboot C:\Windows /s C:`
+6. Replace the OS drive letter if its different from C:
+
 
 ***
