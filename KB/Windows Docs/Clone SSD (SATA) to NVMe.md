@@ -35,7 +35,7 @@ To determine whether the existing OS is on GPT or MBR, boot into the OS.
 3. On **Disklabel type**, it will say gpt or mbr
 
 ***
-	***Note: If your disk type is GPT, you may proceed with the clone. If the disk type is MBR, it should be converted to GPT (without data loss - Refer Step 4) which supports the latest hardware.
+	***Note: If your disk type is GPT, you may proceed with the clone. If the disk type is MBR, it should be converted to GPT (without data loss - Refer Step 4) which supports the latest hardware.***
 ***
 
 ###### Step 1.1: Prepare the disk for the conversion
