@@ -8,7 +8,7 @@
 - [[#Disable Admin Share]]
 - [[#Enable Admin Share]]
 - [[#High Performance Power Plan]]
-- [[#Set Time Zone]]
+- [[#IST Time Zone]]
 - [[#WSUS Domain Policy]]
 - [[#Block IP Addr Outbound Firewall]]
 - [[#Set Local Administrators]]
@@ -23,7 +23,7 @@
 
 `Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Remote Desktop Services -> Remote Session Host -> Session Time Limits` 
 
--  Set time limit for active but idle Remote Desktop Services session -> Enabled: 6 hours.
+-  Set time limit for disconnected sessions -> Enabled: 6 hours.
 -  End session when time limits are reached -> Enabled
 
 
