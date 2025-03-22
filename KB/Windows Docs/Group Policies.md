@@ -8,21 +8,22 @@
 - [[#Disable Admin Share]]
 - [[#Enable Admin Share]]
 - [[#High Performance Power Plan]]
-- [[#Set Time Zone]]
+- [[#IST Time Zone]]
 - [[#WSUS Domain Policy]]
 - [[#Block IP Addr Outbound Firewall]]
 - [[#Set Local Administrators]]
 - [[#Remote Desktop Shadow WP (with User's Permission)]]
 - [[#Remote Desktop Shadow WOP (without User's Permission)]]
+- [[#RDP Optimization]]
 
 ***
 
-## RDP Idle Timeout Logoff
+## RDP Idle Logout
 ##### **OU: Domain Computers**
 
 `Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Remote Desktop Services -> Remote Session Host -> Session Time Limits` 
 
--  Set time limit for active but idle Remote Desktop Services session -> Enabled: 6 hours.
+-  Set time limit for disconnected sessions -> Enabled: 6 hours.
 -  End session when time limits are reached -> Enabled
 
 
@@ -72,7 +73,7 @@
 - ***Windows Remote Management (WS-Management)*** -> Check “Define this policy setting” and select Automatic
 - `Computer Configuration -> Preferences -> Control Panel Settings -> Services.` Right click and Select New -> Service
 - Service Name: ***WinRM***. Service Action: ***Start Service***. Recovery Tab -> First, Second and Subsequent failures -> Select “Restart the service”
-- Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Windows Remote Management (WinRM) -> WinRM Service
+- `Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Windows Remote Management (WinRM) -> WinRM Service`
 - Enable ***Allow remote server management through WinRM***
 - In IPv4/IPv6 boxes, specify IP addresses or enter * for all IP addresses
 - Then, Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Windows Remote Shell -> Enable ***Allow Remote Shell Access***
@@ -196,3 +197,14 @@ Enable “Select an active power plan” and select **High Performance**
 
 - Edit **DNS Servers** and click **Enabled**
 - Specify at least one DNS server address. Note that the DNS address are space delimited.
+
+## RDP Optimization
+
+`Computer Configuration -> Policies -> Administrative Templates -> Windows Components -> Remote Desktop Services -> Remote Desktop Session Host -> Remote Session Environments`
+
+- Edit "Configure compression for RemoteFX data" and select **Enabled**
+- Under RDP compression algorithm, select **Balances memory and network bandwith**
+- Edit "Use hardware graphics adapters for all Remote Desktop Services sessions" and select **Enabled**
+- Edit "Configure H.264/AVC hardware encoding for Remote Desktop Connections" and select **Enabled**
+- Edit "Allow desktop composition for remote desktop sessions" and select **Disabled**
+- Edit "Do not allow font smoothing" and select **Disabled**
