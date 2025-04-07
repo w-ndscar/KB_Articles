@@ -34,7 +34,7 @@ sudo mv /etc/samba/smb.conf /etc/samba/smb.conf.bak
 
 Stop the relevant services by using the following commands
 ```
-sudo systemctl stop samba-ad-dc-service smbd.service nmbd.service winbind.service && sudo systemctl disable samba-ad-dc-service smbd.service nmbd.service winbind.service
+sudo systemctl stop samba.service smbd.service nmbd.service winbind.service && sudo systemctl disable samba.service smbd.service nmbd.service winbind.service
 ```
 
 The Samba AD can be provisioned in both interactive and non-interactive modes.
@@ -241,7 +241,7 @@ sudo systemctl daemon-reload
 
 Then enable the samba services by running
 ```
-sudo systemctl enable samba.service smbd.service nmbd.service winbind.service 
+sudo systemctl enable samba.service smbd.service nmbd.service 
 ```
 
 Then start Samba with

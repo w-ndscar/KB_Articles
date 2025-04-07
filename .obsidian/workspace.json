@@ -1,71 +1,69 @@
 {
   "main": {
-    "id": "11f78a293be10cee",
+    "id": "747a701c0310571f",
     "type": "split",
     "children": [
       {
-        "id": "931f4fa50387a670",
+        "id": "b194c6118744d7e7",
         "type": "tabs",
         "children": [
           {
-<<<<<<< HEAD
-            "id": "411a010e5ba422c3",
-=======
-            "id": "e07c9fcd97b71b2f",
->>>>>>> 93e38cad5529871948b7fc30d9c40f7600c418ff
+            "id": "9a06ce59e1b086fe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
                 "file": "KB/Linux Docs/Samba Server Setup in Ubuntu Server 24.04.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Samba Server Setup in Ubuntu Server 24.04"
-=======
-                "file": "KB/Windows Docs/Group Policies.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Group Policies"
->>>>>>> 93e38cad5529871948b7fc30d9c40f7600c418ff
+              "title": "Samba Server Setup in Ubuntu Server 24.04"
+            }
+          },
+          {
+            "id": "75de80e2774b2e5a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "KB/Windows Docs/Clone SSD (SATA) to NVMe.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Clone SSD (SATA) to NVMe"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "5bb6b1ea4d74bff4",
+    "id": "e7a3d23e10fa696e",
     "type": "split",
     "children": [
       {
-        "id": "5df493dbd8ddd53d",
+        "id": "f78589268447eac3",
         "type": "tabs",
         "children": [
           {
-            "id": "c6c207fd420fbcbc",
+            "id": "07b615f520da99b9",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-<<<<<<< HEAD
                 "sortOrder": "alphabetical",
                 "autoReveal": false
-=======
-                "sortOrder": "alphabetical"
->>>>>>> 93e38cad5529871948b7fc30d9c40f7600c418ff
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "051ebf78e37f7e9a",
+            "id": "b920865f21f2bf89",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -82,7 +80,7 @@
             }
           },
           {
-            "id": "8cc59804ef32b99c",
+            "id": "70df910703fa3e21",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -98,23 +96,20 @@
     "width": 300
   },
   "right": {
-    "id": "7b25bec42e032bf2",
+    "id": "08996e20cfc348a9",
     "type": "split",
     "children": [
       {
-        "id": "a58160833ba8b1c3",
+        "id": "c9f320a246b548d3",
         "type": "tabs",
         "children": [
           {
-            "id": "80e150b7d6a1163c",
+            "id": "cb1bd1e1c8f3869f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
                 "file": "KB/Linux Docs/Samba Server Setup in Ubuntu Server 24.04.md",
-=======
->>>>>>> 93e38cad5529871948b7fc30d9c40f7600c418ff
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,59 +119,43 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-<<<<<<< HEAD
               "title": "Backlinks for Samba Server Setup in Ubuntu Server 24.04"
-=======
-              "title": "Backlinks"
->>>>>>> 93e38cad5529871948b7fc30d9c40f7600c418ff
             }
           },
           {
-            "id": "2031fb2e494b0b9e",
+            "id": "7690004f4fb89d6d",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
                 "file": "KB/Linux Docs/Samba Server Setup in Ubuntu Server 24.04.md",
-=======
->>>>>>> 93e38cad5529871948b7fc30d9c40f7600c418ff
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-<<<<<<< HEAD
               "title": "Outgoing links from Samba Server Setup in Ubuntu Server 24.04"
-=======
-              "title": "Outgoing links"
->>>>>>> 93e38cad5529871948b7fc30d9c40f7600c418ff
             }
           },
           {
-            "id": "3e1f0c17c2a80147",
+            "id": "2446861adefb32b1",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-<<<<<<< HEAD
                 "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
-=======
-                "useHierarchy": true
->>>>>>> 93e38cad5529871948b7fc30d9c40f7600c418ff
               },
               "icon": "lucide-tags",
               "title": "Tags"
             }
           },
           {
-            "id": "e44ab3eb6b051960",
+            "id": "0fdfa03aa5479959",
             "type": "leaf",
             "state": {
               "type": "outline",
-<<<<<<< HEAD
               "state": {
                 "file": "KB/Linux Docs/Samba Server Setup in Ubuntu Server 24.04.md",
                 "followCursor": false,
@@ -185,11 +164,6 @@
               },
               "icon": "lucide-list",
               "title": "Outline of Samba Server Setup in Ubuntu Server 24.04"
-=======
-              "state": {},
-              "icon": "lucide-list",
-              "title": "Outline"
->>>>>>> 93e38cad5529871948b7fc30d9c40f7600c418ff
             }
           }
         ]
@@ -209,53 +183,9 @@
       "command-palette:Open command palette": false
     }
   },
-<<<<<<< HEAD
-  "active": "411a010e5ba422c3",
-=======
-  "active": "e07c9fcd97b71b2f",
->>>>>>> 93e38cad5529871948b7fc30d9c40f7600c418ff
+  "active": "75de80e2774b2e5a",
   "lastOpenFiles": [
-    "KB/Windows Docs/Clone SSD (SATA) to NVMe.md",
-    "KB/Windows Docs/Custom Windows and WDS Deployment/Windows ISO to WIM.md",
-    "KB/Windows Docs/Custom Windows and WDS Deployment/WDS Setup.md",
-    "KB/Windows Docs/Custom Windows and WDS Deployment/Custom Windows 10 Pro Image.md",
-    "KB/Windows Docs/Group Policies.md",
-    "RDP Optimization.md",
-    "KB/Windows Docs/Logoff RDP Session.md",
-<<<<<<< HEAD
-    "KB/Windows Docs/Install Windows the Arch way.md",
-    "KB/Windows Docs/Group Policies.md",
-    "KB/Linux Docs/Samba Server Setup in Ubuntu Server 24.04.md",
-    "KB/Linux Docs/Deploy AWX using Kubernetes (K3S).md",
-    "KB/Windows Docs/Custom Windows and WDS Deployment/Custom Windows 10 Pro Image.md",
-    "KB/Windows Docs/Custom Windows and WDS Deployment/WDS Setup.md",
-    "KB/Windows Docs/Custom Windows and WDS Deployment/Windows ISO to WIM.md",
-    "KB/Linux Docs/Zabbix - Custom Items, Triggers and Alerts.md",
-    "KB/Linux Docs/Zabbix Monitoring.md",
-    "KB/Windows Docs/Snipe-IT Setup - Windows Server 2019.md",
-    "KB/Linux Docs/KASM Workspaces and ClamAV/Custom Download Environment.md",
-    "KB/Linux Docs/KASM Workspaces and ClamAV/ClamAV with On-Access Scanning on Linux.md",
-=======
-    "KB/Linux Docs/Deploy AWX using Kubernetes (K3S).md",
-    "Reset Windows User password using the Hiren Boot CD ISO.md",
-    "KB/Windows Docs/Snipe-IT Setup - Windows Server 2019.md",
-    "KB/Linux Docs/KASM Workspaces and ClamAV/ClamAV with On-Access Scanning on Linux.md",
-    "KB/Linux Docs/KASM Workspaces and ClamAV/Custom Download Environment.md",
-    "KB/Linux Docs/Zabbix Monitoring.md",
-    "KB/Linux Docs/Zabbix - Custom Items, Triggers and Alerts.md",
-    "KB/Windows Docs/Install Windows the Arch way.md",
->>>>>>> 93e38cad5529871948b7fc30d9c40f7600c418ff
-    "KB/Logoff RDP Session.md",
-    "KB/Snipe-IT Setup - Windows Server 2019.md",
-    "KB/Group Policies.md",
-    "KB/Sonicwall/Sonicwall Global VPN Client Issues.md",
-    "KB/Zabbix - Custom Items, Triggers and Alerts.md",
-    "KB/Deploy AWX using Kubernetes (K3S).md",
-    "KB/KASM Workspaces and ClamAV/ClamAV with On-Access Scanning on Linux.md",
-    "KB/Custom Windows and WDS Deployment/Custom Windows 10 Pro Image.md",
-    "KB/Custom Windows and WDS Deployment/WDS Setup.md",
-    "KB/Custom Windows and WDS Deployment/Windows ISO to WIM.md",
-    "KB/Zabbix Monitoring.md",
-    "Group Policies.pdf"
+    "KB/Linux Docs/Opensource Backup Solutions.md",
+    "KB/Linux Docs/Samba Server Setup in Ubuntu Server 24.04.md"
   ]
 }

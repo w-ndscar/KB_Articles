@@ -121,6 +121,8 @@ and proceed with the rest of the steps.
 
 It is recommended to use GPT partition when using latest hardware like NVMe as the MBR partition types have some limitation and are recommended for legacy/old hardware. The conversion from MBR to GPT is possible without any data loss. However, it is always recommended to take a backup of your data before proceeding.
 
+***Note:  The MBR system partition is typically around 50MB, which isn't sufficient for EFI. When converting from MBR to GPT, a 100MB EFI partition will be created at the end of the available disk space. Before proceeding with the conversion, ensure that all necessary partitions (e.g., C: Drive, D: Drive, etc.) are already set up ***
+
 **For Windows**:
 
 The conversion of an existing Windows installation from MBR (Legacy) to GPT (UEFI) can be done in two ways.
@@ -158,6 +160,7 @@ If the error: "Cannot find OS partition(s) for disk 0", do the following
 4. Open Command Prompt as an administrator and type the following command
 5. `bcdboot C:\Windows /s C:`
 6. Replace the OS drive letter if its different from C:
+7. Go back to Step 4 and continue the validation process
 
 
 ***
