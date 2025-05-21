@@ -1,6 +1,6 @@
 ***
 ##### Table of Contents:
-- [[#RDP Idle Timeout Logoff]]
+- [[#RDP Idle Logout]]
 - [[#Hide Shutdown and Sleep]]
 - [[#Login Banner]]
 - [[#Enable WinRM]]
